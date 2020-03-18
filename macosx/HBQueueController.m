@@ -532,7 +532,7 @@ NSString * const HBQueueItemNotificationPathKey = @"HBQueueItemNotificationPathK
         NSString *description;
         if (item.state == HBQueueItemStateCompleted)
         {
-            title = NSLocalizedString(@"Put down that cocktail…", @"Queue notification alert message");
+            title = NSLocalizedString(@"Put down that grape and ginger-ale…", @"Queue notification alert message");
             description = [NSString stringWithFormat:NSLocalizedString(@"Your encode %@ is done!", @"Queue done notification message"),
                                      item.outputFileName];
 
@@ -569,7 +569,7 @@ NSString * const HBQueueItemNotificationPathKey = @"HBQueueItemNotificationPathK
     {
         // On Screen Notification
         NSAlert *alert = [[NSAlert alloc] init];
-        [alert setMessageText:NSLocalizedString(@"Put down that cocktail…", @"Queue done alert message")];
+        [alert setMessageText:NSLocalizedString(@"Put down that grape and ginger-ale…", @"Queue done alert message")];
         [alert setInformativeText:NSLocalizedString(@"Your HandBrake queue is done!", @"Queue done alert informative text")];
         [NSApp requestUserAttention:NSCriticalRequest];
         [alert runModal];
